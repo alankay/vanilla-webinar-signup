@@ -1,0 +1,93 @@
+/* ------------------------------ reset ------------------------------ */
+* { margin: 0em; padding: 0em; }
+fieldset, img { border: none; }
+header, footer, nav, section, article, aside, hgroup { display: block }
+li { list-style:none; }
+ul, ol { margin: .25em 2em; }
+ul li { list-style: disc; margin: .5em 0em; font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+   font-size: 1.25em;   }
+ol li { list-style: decimal; margin: .25em 0em }
+
+/* ------------------------------ html#red ------------------------------ */
+body { border-top: 7px solid rgb(0,65,128);  }
+.lucida { font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Helvetica, sans-serif; }
+
+p { margin: 1em 0em; font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+    font-size: 1.25em; }
+
+h1 {  }
+h2 {  }
+h3 { margin: 1em 0em; text-align: center; font-size: 1.5em; letter-spacing: -1px; font-family: 'Raleway', Helvetica, Arial, sans-serif; text-transform: capitalize;}
+h4 {  }
+
+/* ------------------------------ header ------------------------------ */
+header { }
+header hgroup h1 { width: 60px; padding: .25em 0em .25em 0em; background: rgb(0,65,128); border: 1px solid rgb(0,65,128); border-top: none; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px;
+-webkit-border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; }
+header hgroup h1 span { background: url(_images/logomark.png) no-repeat 0em 0em; display: block; width: 44px; margin: 0em auto; height: 45px; text-indent: -9999px; }
+header div.content { position: relative; overflow: auto }
+header ul { position: absolute; top: 0em; right: 0em; margin: 0em 0em; }
+header ul li { color: rgb(0,0,0); list-style: none; line-height: 24px; display: block; float: left; margin-right: 1em; font-size: .8em; border-bottom: 1px dotted rgb(51,51,51) }
+header ul li.date { background: url(_images/ico-calendar.png) no-repeat 0em 0em; padding-left: 30px; }
+
+header ul li.live { border-bottom: none }
+header ul li.live span { background: rgb(204,0,0); border: 1px solid rgb(204,0,0); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: rgb(255,255,255); padding: .25em .25em; font-size: 1.25em; }
+header ul li.live span strong { text-decoration: blink; }
+
+header ul li.replay { border-bottom: none }
+header ul li.replay span { background: rgb(0,150,0); border: 1px solid rgb(0,150,0); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: rgb(255,255,255); padding: .25em .25em; font-size: 1.25em; }
+header ul li.replay span strong { text-decoration: blink; }
+
+/* ------------------------------ div#top ------------------------------ */
+div#top { overflow: auto; }
+
+/* ------------------------------ section#main ------------------------------ */
+section#main { margin-top: 1em; overflow:hidden; }
+section#main div#alt { position: relative; }
+section#main h1#headline { margin-top: 0em; text-align: left; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-size: 40px; line-height: 60px; color: rgb(0,0,0); /*text-shadow: -2px -2px 0 rgb(255,255,255), 2px -2px 0 rgb(255,255,255), -2px 2px 0 rgb(255,255,255), 2px 2px 0 rgb(255,255,255)*/ }
+section#main h2#sub-headline { margin-top: 0em; }
+section#main p { color: rgb(0,0,0); }
+section#main div.alert-message p { color: rgb(0,0,0); }
+section#main img.float-right { margin-left: 1em; }
+
+/* ------------------------------ footer ------------------------------ */
+footer { clear: both; padding: 1em 1em; width: 900px; margin: 1.5em auto .5em auto; text-align: right; border-top: 1px dotted rgb(230,230,230); overflow: hidden }
+footer h5#logo a { float: left; width: 207px; height: 60px; display: block; text-indent: -2000em; background: url(_images/logo.png) no-repeat top left; }
+footer h5#logo span { text-indent: -2000em; }
+footer a { color: rgb(0,0,0); text-decoration: none; }
+footer p { margin: 0em 0em; }
+
+/* ------------------------------ classes ------------------------------ */
+.centre { text-align: center; }
+.peace { overflow: hidden; }
+.invisible { display: none; }
+.red { color: rgb(204,0,0); }
+.float { float: left; width: 49%; }
+.float-sixty { width: 60%; }
+.float-forty { width: 40%; }
+.float-left { float: left; margin-right: .5em; }
+.float-right { float: right; margin-right: .5em; }
+
+div.content { width: 900px; margin: 0em auto; }
+
+div.alert-message p { margin: 0em 0em; }
+
+/* ------------------------------
+Addons
+------------------------------ */
+
+/* ------------------------------ div#cta ------------------------------ */
+div#cta { margin: 1em 1em; background: rgb(255,255,255); border: 2px solid rgb(230,230,230); border-top:none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; box-shadow: 0px 0px 8px rgba(250,230,100,5); -moz-box-shadow: 0px 0px 8px rgba(250,230,100,5); -khtml-box-shadow: 0px 0px 8px rgba(250,230,100,5); -webkit-box-shadow: 0px 0px 8px rgba(250,230,100,5); }
+div#cta aside { padding: 1em 1em; }
+
+div#cta h3 { margin: 0em 0em 0em 0em; font-size: 1.25em; font-weight: normal; text-align: center; letter-spacing: 1px; background: rgb(0,65,128); padding: .35em 0em; color: rgb(255,255,255);border-bottom: none; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; }
+
+/* ------------------------------ div.form ------------------------------ */
+div.form form input.btn { width: 275px; padding: .5em 0em .25em 0em; margin: .5em auto; font-weight: bold; display: block; text-align: center; font-size: 1.25em; }
+div.form form dl dt { clear:both; padding: .25em .25em; font-size: 1em; width: 275px; margin: 0em auto; }
+div.form form dl dd { clear:both; margin: .5em 0em; text-align: left; }
+div.form form label { font-weight: bold; }
+
+div.form form input[type="text"] { 	-webkit-appearance:none!important; -webkit-border-horizontal-spacing:0!important; -webkit-border-vertical-spacing:0!important; -webkit-box-shadow:none!important; -webkit-font-smoothing:auto!important; -webkit-rtl-ordering:logical!important; -webkit-transform:none!important; -webkit-user-select:text!important; background-color:#FAFAFA!important; background-image:none!important; background-origin:padding-box!important; border-bottom-color:#DDD!important; border-bottom-left-radius:3px!important; border-bottom-right-radius:3px!important; border-bottom-style:solid!important; border-bottom-width:1px!important; border-collapse:separate!important; border-left-color:#DDD!important; border-left-style:solid!important; border-left-width:1px!important; border-right-color:#DDD!important; border-right-style:solid!important; border-right-width:1px!important; border-top-color:#DDD!important; border-top-left-radius:3px!important; border-top-right-radius:3px!important; border-top-style:solid!important; border-top-width:1px!important; box-shadow:none!important; display: block; color:#888!important; padding: .25em .25em; font-size: 1em; width: 275px; margin: 0em auto; }
+
+div.form form select { background-image:none!important; background-origin:padding-box!important; border-bottom-color:#DDD!important; border-bottom-left-radius:3px!important; border-bottom-right-radius:3px!important; border-bottom-style:solid!important; border-bottom-width:1px!important; border-collapse:separate!important; border-left-color:#DDD!important; border-left-style:solid!important; border-left-width:1px!important; border-right-color:#DDD!important; border-right-style:solid!important; border-right-width:1px!important; border-top-color:#DDD!important; border-top-left-radius:3px!important; border-top-right-radius:3px!important; border-top-style:solid!important; border-top-width:1px!important; box-shadow:none!important; display: block; color:#888!important; padding: .25em .25em; font-size: 1em; width: 275px; margin: 0em auto; }
