@@ -1,0 +1,102 @@
+<!doctype html> 
+<html> 
+<head>
+
+<meta charset="UTF-8"> 
+<title>[PAGE_TITLE] | [SITE_NAME]</title>
+
+<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css" />
+
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+<link href="bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/flipclock.css" rel="stylesheet">
+
+<body class="lucida">
+
+<header>
+
+<!-- open content --><div class="content">
+
+<hgroup>
+<h1><span>Strategic Profits</span></h1>
+</hgroup>
+
+<ul>
+<li class="date">
+[START_DATE] – [END_DATE] [YEAR]
+</li>
+</ul>
+
+<!-- close content --></div>
+
+</header>
+
+<section id="main">
+
+<!-- open content --><div class="content">
+
+<img src="_images/globe.png" alt="" class="float-left img-sm" />
+
+<h2 id="sub-headline" class="red">[EVENT_TYPE]:</h2>
+
+<h1 id="headline">&#8220;[EVENT_TITLE]&#8221;</h1>
+
+<br clear="all" />
+
+<p class="centre"><strong class="red">Starting in:</strong></p>
+
+<div id="countdown">
+<div class="clock"></div>
+</div>
+
+<!-- close content --></div>
+
+</section>
+
+<br clear="all" />
+
+<footer>
+<h5 id="logo"><a href=""><span></span></a></h5>
+<p><small>&copy; [COMPANY_NAME]. All rights reserved.</small><br />
+<small><a href="#" target="_blank">Privacy</a> |
+<a href="#" target="_blank">Terms</a> |
+<a href="#" target="_blank">Contact</a>
+</small></p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    // Target UTC date/time
+    var targetUTC = Date.UTC(2030, 11, 31, 23, 59, 59); // Month is 0-based
+
+    // Current UTC time
+    var nowUTC = Date.now();
+
+    // Seconds remaining
+    var secondsToGo = Math.floor((targetUTC - nowUTC) / 1000);
+
+    if (secondsToGo < 0) {
+        secondsToGo = 0;
+    }
+
+    var clock = $('.clock').FlipClock(secondsToGo, {
+        clockFace: 'DailyCounter',
+        countdown: true,
+        autoStart: true,
+        callbacks: {
+            stop: function () {
+                $('.message').html('The clock has stopped!');
+            }
+        }
+    });
+
+});
+</script>
+
+</body>
+
+</html>
