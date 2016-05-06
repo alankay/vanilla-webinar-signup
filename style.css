@@ -4,8 +4,8 @@ fieldset, img { border: none; }
 header, footer, nav, section, article, aside, hgroup { display: block }
 li { list-style:none; }
 ul, ol { margin: .25em 2em; }
-ul li { list-style: disc; margin: .5em 0em; font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
-   font-size: 1.25em;   }
+/* ul li { list-style: disc; margin: .5em 0em; font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+   font-size: 1.25em;  } */
 ol li { list-style: decimal; margin: .25em 0em }
 
 /* ------------------------------ html#red ------------------------------ */
@@ -24,11 +24,11 @@ h4 {  }
 header { }
 header hgroup h1 { width: 60px; padding: .25em 0em .25em 0em; background: rgb(0,65,128); border: 1px solid rgb(0,65,128); border-top: none; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px;
 -webkit-border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; }
-header hgroup h1 span { background: url(_images/logomark.png) no-repeat 0em 0em; display: block; width: 44px; margin: 0em auto; height: 45px; text-indent: -9999px; }
+header hgroup h1 span { background: url(img/logomark.png) no-repeat 0em 0em; display: block; width: 44px; margin: 0em auto; height: 45px; text-indent: -9999px; }
 header div.content { position: relative; overflow: auto }
 header ul { position: absolute; top: 0em; right: 0em; margin: 0em 0em; }
 header ul li { color: rgb(0,0,0); list-style: none; line-height: 24px; display: block; float: left; margin-right: 1em; font-size: .8em; border-bottom: 1px dotted rgb(51,51,51) }
-header ul li.date { background: url(_images/ico-calendar.png) no-repeat 0em 0em; padding-left: 30px; }
+header ul li.date { background: url(img/ico-calendar.png) no-repeat 0em 0em; padding-left: 30px; }
 
 header ul li.live { border-bottom: none }
 header ul li.live span { background: rgb(204,0,0); border: 1px solid rgb(204,0,0); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: rgb(255,255,255); padding: .25em .25em; font-size: 1.25em; }
@@ -52,7 +52,7 @@ section#main img.float-right { margin-left: 1em; }
 
 /* ------------------------------ footer ------------------------------ */
 footer { clear: both; padding: 1em 1em; width: 900px; margin: 1.5em auto .5em auto; text-align: right; border-top: 1px dotted rgb(230,230,230); overflow: hidden }
-footer h5#logo a { float: left; width: 207px; height: 60px; display: block; text-indent: -2000em; background: url(_images/logo.png) no-repeat top left; }
+footer h5#logo a { float: left; width: 207px; height: 60px; display: block; text-indent: -2000em; background: url(img/logo.png) no-repeat top left; }
 footer h5#logo span { text-indent: -2000em; }
 footer a { color: rgb(0,0,0); text-decoration: none; }
 footer p { margin: 0em 0em; }
@@ -67,6 +67,7 @@ footer p { margin: 0em 0em; }
 .float-forty { width: 40%; }
 .float-left { float: left; margin-right: .5em; }
 .float-right { float: right; margin-right: .5em; }
+.img-sm { width: 10%; height: auto; }
 
 div.content { width: 900px; margin: 0em auto; }
 
@@ -75,6 +76,8 @@ div.alert-message p { margin: 0em 0em; }
 /* ------------------------------
 Addons
 ------------------------------ */
+/* ------------------------------ div#cta ------------------------------ */
+div#countdown { margin: 0 auto; width: fit-content; }
 
 /* ------------------------------ div#cta ------------------------------ */
 div#cta { margin: 1em 1em; background: rgb(255,255,255); border: 2px solid rgb(230,230,230); border-top:none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; box-shadow: 0px 0px 8px rgba(250,230,100,5); -moz-box-shadow: 0px 0px 8px rgba(250,230,100,5); -khtml-box-shadow: 0px 0px 8px rgba(250,230,100,5); -webkit-box-shadow: 0px 0px 8px rgba(250,230,100,5); }
@@ -91,3 +94,32 @@ div.form form label { font-weight: bold; }
 div.form form input[type="text"] { 	-webkit-appearance:none!important; -webkit-border-horizontal-spacing:0!important; -webkit-border-vertical-spacing:0!important; -webkit-box-shadow:none!important; -webkit-font-smoothing:auto!important; -webkit-rtl-ordering:logical!important; -webkit-transform:none!important; -webkit-user-select:text!important; background-color:#FAFAFA!important; background-image:none!important; background-origin:padding-box!important; border-bottom-color:#DDD!important; border-bottom-left-radius:3px!important; border-bottom-right-radius:3px!important; border-bottom-style:solid!important; border-bottom-width:1px!important; border-collapse:separate!important; border-left-color:#DDD!important; border-left-style:solid!important; border-left-width:1px!important; border-right-color:#DDD!important; border-right-style:solid!important; border-right-width:1px!important; border-top-color:#DDD!important; border-top-left-radius:3px!important; border-top-right-radius:3px!important; border-top-style:solid!important; border-top-width:1px!important; box-shadow:none!important; display: block; color:#888!important; padding: .25em .25em; font-size: 1em; width: 275px; margin: 0em auto; }
 
 div.form form select { background-image:none!important; background-origin:padding-box!important; border-bottom-color:#DDD!important; border-bottom-left-radius:3px!important; border-bottom-right-radius:3px!important; border-bottom-style:solid!important; border-bottom-width:1px!important; border-collapse:separate!important; border-left-color:#DDD!important; border-left-style:solid!important; border-left-width:1px!important; border-right-color:#DDD!important; border-right-style:solid!important; border-right-width:1px!important; border-top-color:#DDD!important; border-top-left-radius:3px!important; border-top-right-radius:3px!important; border-top-style:solid!important; border-top-width:1px!important; box-shadow:none!important; display: block; color:#888!important; padding: .25em .25em; font-size: 1em; width: 275px; margin: 0em auto; }
+
+/* ------------------------------ div#ticket ------------------------------ */
+div#ticket { width: 275px; margin: 0em 1em .5em 0em; overflow: hidden; background: rgb(255,255,255);  }
+
+div#ticket aside { background: url(img/pass.jpg) no-repeat 0em 0em; width: 270px; height: 418px; margin: 0em auto; }
+div#ticket aside div.wrapping { padding: 60px 30px 35px 30px; }
+div#ticket aside dl.admit { margin: 0em 0em; padding: 0em; width: 100%; }
+div#ticket aside dl.admit dt { font-family:Impact, Arial, Helvetica, sans-serif; font-weight: normal; text-align: center; color: rgb(0,0,0); font-size: 1.25em; margin: 0em; padding: 0em; display: block;  }
+div#ticket aside dl.admit dt big { display: block; font-size: 1.25em; }
+div#ticket aside p small { font-size: .7em; }
+
+div#ticket aside dl.details {margin: .25em 0em; padding: 0em; width: 100% }
+div#ticket aside dl.details dt { text-align: center; color: rgb(0,0,0); font-size: 1em; margin: 0em; padding: 0em; display: block; }
+div#ticket aside dl.details dd.name { text-align: center; color: rgb(0,0,0); font-size: 1.25em; font-weight: bold; margin: 0em; padding: 0em; display: block; }
+div#ticket aside dl.details dd { text-align: center; color: rgb(0,0,0); font-size: 1em; font-weight: bold; margin: 0em; padding: 0em; display: block; }
+
+div#ticket aside div.details { background: rgb(255,255,255); border: 1px solid rgb(255,255,255); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: rgb(0,0,0); margin: 0em .5em; }
+
+/* ------------------------------ div#link ------------------------------ */
+div#link { background: rgb(200,255,175); border: 1px solid rgb(150,200,0); border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align: center; padding: .25em .5em .5em .5em; margin: .5em 1.5em ; }
+div#link h3 { text-transform: none; text-align: center; color: rgb(0,0,0); margin: .25em 0em 0em 0em; font-size: 1.25em; letter-spacing: -1px; }
+
+/* ------------------------------ ul#cal-links ------------------------------ */
+ul#cal-links { overflow: hidden; }
+ul#cal-links li { float: left; width: 33%; list-style-type: none;  }
+ul#cal-links li h4 { font-size: .6em; }
+ul#cal-links li h4.gc { background: url(img/but-gc.png) no-repeat 0em 0em; padding-left: 52px; text-align: left; line-height: 50px; }
+ul#cal-links li h4.outlook { background: url(img/but-outlook.png) no-repeat 0em 0em; padding-left: 52px; text-align: left; line-height: 50px; }
+ul#cal-links li h4.ical { background: url(img/but-ical.png) no-repeat 0em 0em; padding-left: 52px; text-align: left; line-height: 50px; }
